@@ -1,0 +1,128 @@
+/* Warna latar dan font */
+body {
+    background: linear-gradient(135deg, #a0c4ff, #bde0fe);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    min-height: 100vh;
+    padding-bottom: 50px;
+    padding-top: 70px;
+  z-index: 1;
+  position: relative;
+}
+
+/* Judul */
+h1, h2, h3, h4 {
+    font-weight: 600;
+    color: #2a2f45;
+}
+
+/* Card-style box */
+.card-custom {
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+/* Tombol utama */
+.btn-primary {
+    background: linear-gradient(135deg, #89c2d9, #61a5c2);
+    border: none;
+    transition: all 0.3s ease;
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(135deg, #4f9aa3, #4d9fcf);
+}
+
+/* Input dan select */
+input, select, textarea {
+    border-radius: 8px !important;
+    border: 1px solid #ccc;
+}
+
+/* Tabel */
+.table-custom {
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.table-custom th {
+    background-color: #89c2d9;
+    color: #fff;
+}
+
+.table-custom td {
+    vertical-align: middle;
+}
+
+/* Badge status */
+.badge {
+    padding: 5px 10px;
+    font-size: 0.9em;
+    border-radius: 10px;
+}
+
+/* Warna lembut */
+.bg-info {
+    background-color: #9ad0ec !important;
+    color: #003049 !important;
+}
+
+.bg-success {
+    background-color: #a3d9a5 !important;
+    color: #004d40 !important;
+}
+
+.bg-primary {
+    background-color: #89c2d9 !important;
+    color: #fff !important;
+}
+
+.bg-light {
+    background-color: #f8f9fa !important;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+    .container {
+        padding: 0 15px;
+    }
+}
+
+.navbar {
+    padding-left: 30px;
+    padding-right: 30px;
+      position: relative;
+  z-index: 10;
+}
+
+/* ==== Navbar Hover Effect === */
+.navbar-nav .nav-link {
+    position: relative;
+    font-size: 1rem;
+    padding: 8px 12px;
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+.navbar-nav .nav-link::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    left: 0;
+    bottom: 0;
+    background-color: #fff;
+    transition: width 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover::after {
+    width: 100%;
+}
+.nav-link {
+  pointer-events: auto;
+}
