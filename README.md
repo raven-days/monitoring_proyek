@@ -1,0 +1,11 @@
+# 📊 Sistem Monitoring Proyek (Web Based)
+
+Sistem Monitoring Proyek ini adalah aplikasi berbasis web yang dirancang untuk membantu proses pencatatan, pelaporan, dan pemantauan kegiatan proyek. Aplikasi ini dibangun menggunakan teknologi PHP dan MySQL dan berjalan secara lokal melalui XAMPP. Sistem menyediakan dua peran pengguna utama, yaitu admin dan teknisi, yang masing-masing memiliki fitur dan akses berbeda sesuai dengan kebutuhan pengelolaan proyek.
+
+Admin memiliki peran utama untuk mengelola data proyek secara keseluruhan. Admin dapat melakukan login ke sistem, menambahkan proyek baru, mengedit atau menghapus proyek yang sudah ada, serta menambahkan dan mengelola akun teknisi. Admin juga dapat melihat ringkasan seluruh proyek melalui dashboard yang dilengkapi dengan filter proyek dan visualisasi dalam bentuk grafik batang dan grafik donat. Semua data yang dimasukkan oleh admin akan tersimpan di dalam database lokal MySQL dan dapat diakses kembali untuk keperluan pengawasan dan evaluasi.
+
+Teknisi sebagai pengguna kedua dapat melakukan login ke dalam sistem menggunakan akun yang telah dibuat oleh admin. Setelah berhasil login, teknisi dapat melihat daftar proyek yang ditugaskan dan melakukan pembaruan status atau progres proyek. Teknisi juga dapat mengunggah dokumen terkait sebagai bagian dari pelaporan proyek. Semua pembaruan ini akan langsung tersimpan dalam database sehingga dapat ditinjau oleh admin melalui dashboard.
+
+Aplikasi ini berjalan secara lokal melalui XAMPP, dengan folder utama sistem diletakkan di dalam direktori `htdocs`. Untuk mengoperasikan sistem, pengguna cukup membuka browser dan mengakses alamat `http://localhost/monitoring_proyek`. Sebelumnya, pengguna perlu mengimpor file database SQL yang disediakan ke dalam phpMyAdmin dengan nama database `monitoring_proyek`. Koneksi database sudah diatur melalui file konfigurasi yang terletak di dalam folder `config`. 
+
+Aplikasi ini dikembangkan sebagai media latihan dalam membangun sistem informasi monitoring berbasis web dengan fokus pada kemudahan penggunaan dan pencatatan yang terstruktur. Penggunaan sistem ini memungkinkan proses monitoring menjadi lebih efisien, terdokumentasi, dan dapat ditinjau kapan saja melalui perangkat lokal.
